@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="messages-mock-api-v1">
+    <Basepaths>/v1/app</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1516406037493</CreatedAt>
+    <CreatedBy>davidmehi@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>messages-mock-api-v1</DisplayName>
+    <LastModifiedAt>1516406549361</LastModifiedAt>
+    <LastModifiedBy>davidmehi@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignMessage-SetGetMessagesResponse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

@@ -1,0 +1,155 @@
+{
+  "artifact": {
+ 
+    "apigeeConfig": {
+      "overrideExistingCaches": true,
+      "overrideExistingKvms": true,
+      "overrideExistingTargetServers": true,
+      "overrideExistingAPIProducts": true,
+      "overrideExistingLdapResources": true,
+      "overrideExistingDevelopers": true,
+      "overrideExistingDeveloperApps": true,
+      "overrideExistingCompanies": true,
+      "overrideExistingCompanyDevelopers": true,
+      "overrideExistingCompanyApps": true
+    },
+ 
+    "caches": [
+      {
+        "name": "testCache2",
+        "description": "Test Cache 2",
+        "expirySettings": {
+            "timeoutInSec": {
+                "value": "500"
+            },
+            "valuesNull": false
+        }
+      }
+    ],
+ 
+    "kvms": [
+      {
+        "name": "TEST_ENC_CONFIG_KVM",
+        "encrypted": true,
+        "entry": [
+          {
+            "name": "lookup_enc_url",
+            "value": "/lookup_enc_url"
+          },
+          {
+            "name": "lookup_enc_url2",
+            "value": "/lookup_enc_url2"
+          }
+        ]
+      }
+    ],
+ 
+    "targetservers": [
+      {
+        "name": "BACKEND_TS",
+        "host" : "api-backend.manulife.com",
+        "isEnabled" : true,
+        "port" : 443,
+        "sSLInfo": {
+            "enabled": "true"
+          }
+      }
+    ],
+        
+    "apiproducts": [
+        {
+          "name" : "{name}",
+          "displayName": "{display_name}",
+          "approvalType": "manual or auto",
+          "attributes": [
+            {
+              "name": "access",
+              "value": "{public, private, or internal}"
+            },
+            {
+              "name": "{attribute_name2}",
+              "value": "{value2}"
+            }
+          ],
+          "description": "{description}",
+          "apiResources": [ "{/resource1}", "{/resource2}"],
+          "environments": [ "{test}", "{prod}"],
+          "proxies": ["{proxy1}", "{proxy2}"],
+          "quota": "{quota}",
+          "quotaInterval": "{quota_interval}",
+          "quotaTimeUnit": "{quota_unit}",
+          "scopes": ["{scope1}", "{scope2}"]
+        }
+    ],
+    "companies": [
+        {
+            "name": "testcompany1",
+            "displayName": "Test Company 1",
+            "organization": "manulife-development",
+            "status": "active",
+            "attributes": [
+                {
+                    "name": "ADMIN_EMAIL",
+                    "value": "dmehi@apigee.com"
+                }
+            ]
+        }
+    ],
+    "companydevelopers": [
+        {
+            "developer": [
+                {
+                    "email": "dmehi@apigee.com",
+                    "role": "ADMIN"
+                }
+            ],
+            "companyName": "testcompany1"
+        }
+    ],
+    "companyapps": [
+        {
+            "appFamily": "default",
+            "appId": "cbd1bee5-a511-46f1-a5c1-0bd67e5c4135",
+            "attributes": [
+                {
+                    "name": "{attribute_name1}",
+                    "value": "{value1}"
+                },
+                {
+                    "name": "{attribute_name2}",
+                    "value": "{value2}"
+                }
+            ],
+            "callbackUrl": "http://www.google.com",
+            "companyName": "testcompany1",
+            "createdAt": 1499278013631,
+            "createdBy": "dmehi@apigee.com",
+            "credentials": [
+                {
+                    "apiProducts": [
+                        {
+                            "apiproduct": "Test Product",
+                            "status": "approved"
+                        }
+                    ],
+                    "attributes": [],
+                    "consumerKey": "nmqGS0tuf8HZmZADIhAVmqdLX3nJIejm",
+                    "consumerSecret": "H3snTYRaATc6Tg7X",
+                    "issuedAt": 1499278013684,
+                    "scopes": [],
+                    "status": "approved"
+                }
+            ],
+            "lastModifiedAt": 1499278013631,
+            "lastModifiedBy": "dmehi@apigee.com",
+            "name": "TestCompany1App1",
+            "scopes": [],
+            "status": "approved"
+        }
+    ],
+    "developers": [],
+    "developerapps": []
+
+    
+  }
+}
