@@ -1,13 +1,13 @@
 # edge-download-deploy-proxy-grunt-script
-This grunt script will download proxy and config from Edge to the file system.  It can also be used to build and deploy proxies, configs and shared flows.
+This grunt script will build and deploy proxies, configs and shared flows.
 
-Grunt Download, Build, Deploy Tool
+Grunt Build, Deploy Tool
 =========
 This script will download, build and deploy
 
 ### Script Installation
 
-Follow these steps to install the build/deploy script on a Windows machine
+Follow these steps to install the build/deploy script
 
 Install NodeJS 
 
@@ -18,8 +18,6 @@ Download and run the 64-bit installer
 Install Grunt
 
 Open the NodeJS command prompt (run as administrator)
-
-Start Button → applications → Node.js → Node.js command prompt (right click to run as administrator)
 
 run the command:
 
